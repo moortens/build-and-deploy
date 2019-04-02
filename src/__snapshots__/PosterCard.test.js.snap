@@ -22,13 +22,63 @@ exports[`PosterCard should render correctly 1`] = `
       >
         Mock Movie 14
       </h2>
+      <h6
+        className="MuiTypography-root-34 MuiTypography-h6-51"
+      >
+        <span>
+          (
+        </span>
+        <span>
+          Mock Movie 14
+        </span>
+        <span>
+          )
+        </span>
+      </h6>
       <p
         className="MuiTypography-root-34 MuiTypography-body1-43"
       />
+      <p
+        className="MuiTypography-root-34 MuiTypography-body1-43"
+      >
+        <span>
+          Available from:
+        </span>
+        <span>
+          2019-01-11
+        </span>
+      </p>
     </div>
     <div
       className="MuiCardActions-root-70"
-    />
+    >
+      <a
+        className="MuiButtonBase-root-99 MuiButton-root-73 MuiButton-text-75 MuiButton-flat-78 MuiCardActions-action-72"
+        href="https://www.themoviedb.org/movie/undefined"
+        onBlur={[Function]}
+        onContextMenu={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        role="button"
+        tabIndex="0"
+      >
+        <span
+          className="MuiButton-label-74"
+        >
+          Read more
+        </span>
+        <span
+          className="MuiTouchRipple-root-102"
+        />
+      </a>
+    </div>
   </div>
 </div>
 `;

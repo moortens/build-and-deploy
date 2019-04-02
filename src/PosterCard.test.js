@@ -8,6 +8,8 @@ describe('PosterCard', () => {
     movieDetails: {
       title: 'Mock Movie 14',
       description: 'Some movie description',
+      original_title: 'Mock Movie 14',
+      release_date: '2019-01-11',
     },
   };
 
