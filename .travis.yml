@@ -1,10 +1,16 @@
 language: node_js
 node_js:
-  - '10'
+- '10'
 cache:
-  directories: 
-    - node_modules  
+  directories:
+  - node_modules
 script:
-  - npm run lint
-  - npm test
-  - npm run build
+- npm run lint
+- npm test
+- npm run build
+deploy:
+  provider: heroku
+  app: moortens-build-and-deploy-2019
+  skip_cleanup: true
+  api_key:
+    secure: AEWPcPi2rM8VkV7hYfBqRQV2IRAANv69fusv9sP3GQrjiW9/0cSS9Vm7Vlctivwn/5iXhCvgKAOx7osj2rfpce91dQs32HMnHN3PlE6TllcEGFW4c/EN2vzAlF5qqMPDKAp6b1TmoTIQyIp6/cr2e5K9miOp0VIJG61DLMFA8pQLdOtDZn4nzDO18BWA59V7wAYLIu3py1FDGlV+hIdzoVWH7OhPGvTDDe4XswX9wpsz676ite2fEmGcDrFwbarpFClGow6cC/aBpR7dbiJjcp16jd+dMBlf41xQJI0u/2Wn0St3HGebSgrl7YU+p7uuaK0+ey42tD6sZXOonPUcN5lBPPnzQ3K6R6aQ5eCYx3R02RhVyYk+PBp8ZShY9E8io+nBsKOKrYVqqo7uIU6F6N8FpplYFTwmO/jJlmObt5/uz2WUBh0a+TLtLzmDERlAFHl2Xe76ODh2epoEjlKZvEZa5/KFAWRQ3Q9t48pnv071iLto9tLs/tADAi1hHlzCj3Ovt31+0tgqcG+VihONSMFNGGw0mdb15LgFHsxhohB5rxPDvyN9rfem8Jnk0ZigNMpBC7r/Iwa1kyvJTwqT6g9ZkI2WQ41AA98mZBDRLPeoJrY2WLWffT/enreRhdW+Bp+4h701e7CSvPOSRTGeHRIqOLUL58cKwDlZkT258XA=
