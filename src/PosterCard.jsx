@@ -6,6 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
 
 const styles = {
   card: {
@@ -28,7 +29,7 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
         <Typography component="p">{movieDetails.overview}</Typography>
       </CardContent>
       <CardActions>
-        {/* TODO */}
+        <Button href={`https://www.themoviedb.org/movie/${movieDetails.id}`}>Read more</Button>
       </CardActions>
     </Card>
   </div>
