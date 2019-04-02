@@ -26,7 +26,18 @@ const PosterCard = ({ classes, posterUrl, movieDetails }) => (
         <Typography variant="h5" component="h2">
           {movieDetails.title}
         </Typography>
+        <Typography variant="h6" component="h6">
+          <span>(</span>
+          <span>
+            {movieDetails.original_title}
+          </span>
+          <span>)</span>
+        </Typography>
         <Typography component="p">{movieDetails.overview}</Typography>
+        <Typography component="p">
+          <span>Available from:</span>
+          <span>{movieDetails.release_date}</span>
+        </Typography>
       </CardContent>
       <CardActions>
         <Button href={`https://www.themoviedb.org/movie/${movieDetails.id}`}>Read more</Button>
